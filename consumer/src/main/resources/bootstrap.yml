@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      discovery:
+        server-addr: 192.168.136.129:8848
+        cluster-name: BJ
+        enabled: true
+      config:
+        server-addr: 192.168.136.129:8848
+        file-extension: yml
+
