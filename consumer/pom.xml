@@ -56,26 +56,15 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
             <version>2.4.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>5.3.1</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-
-
-            <!--修改maven-resources-plugin版本-->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.consumer.ConsumerApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
